@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <label for="period">Escolha o período:</label>
+    <select id="period">
+        <option value="24">Últimas 24 horas</option>
+        <option value="48">Últimas 48 horas</option>
+        <option value="168">Última semana</option>
+        <option value="720">Último mês</option>
+    </select>
+    <button onclick="loadData()">Carregar Dados</button>
+
+    <canvas id="sensorChart" width="400" height="400"></canvas>
+
+    <script src="app.js"></script>
+</body>
+</html>
