@@ -9,7 +9,7 @@ function loadData() {
             const values = data.map(item => item.AverageValue);
             renderChart(labels, values);
         })
-        .catch(error => console.error('Erdataror fetching :', error));
+        .catch(error => console.error('Error data fetching :', error));
 }
 
 function renderChart(labels, data) {
